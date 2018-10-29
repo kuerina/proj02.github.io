@@ -1,0 +1,449 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+
+/* Base style elements */
+h1 {
+  text-align: center;
+  position: relative;
+  box-align: center;
+  border: double;
+  border-style: double;
+  border-color: #35637A;
+  font-size: 2em;
+  line-height: 1em;
+  padding: 0.625em;
+  font-family: "New Century Schoolbook", "TeX Gyre Schola", serif;
+  font-weight: normal;
+  color: #071D28;
+  background-color: #b675619a;
+};
+
+h3 {
+  margin-left: 1%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: rgb(107, 134, 63);
+  text-align: left;
+  font-weight: normal;
+}
+h2 {
+  margin-left: 1%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: rgb(38, 40, 139);
+  text-align: center;
+  font-weight: normal;
+  align-self: center;
+  font-size: 2em ;/* twice size 2/3 */
+  line-height: 1em;/*  1/3 */
+}
+p {
+  font-size: 1em;
+  line-height: 1.333em;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #201201;
+}
+#contenido {
+  background-color: #686256;
+}
+#resume {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0.625em;
+  grid-auto-rows: minmax(6.25em, auto);
+  padding-top: 0.625em;
+}
+#biopic {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #587e76;
+  max-width: 29.563em;
+  padding: 0.625em;
+  border: solid;
+  border-color: #c1502e;
+  align-self: center;
+  align-items: center;
+}
+#bio {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #587e76;
+  max-width: 29.563em;
+  padding: 0.625em;
+  border: solid;
+  border-color: #c1502e;
+  align-self: center;
+}
+#biopicture {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  align-self: center;
+}
+#studies {
+  background-color: #587e76;
+  border: solid;
+  border-color: #c1502e;
+  display: grid;
+  grid-column: 1;
+  grid-row: 3;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0.625em;
+  grid-auto-rows: min-content;
+  max-width: 29.563em;
+  padding: 0.625em;
+}
+#studies h2 {
+  grid-column: 1;
+  grid-row: 1/2;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
+#school-logo {
+  max-width: 40%;
+  grid-column: 1;
+  margin-left: auto;
+  margin-right: auto;
+  grid-row: 2/3;
+}
+#study-list {
+  grid-column: 1;
+  grid-row: 3/4;
+  max-width: unset;
+}
+ol li {
+  list-style-position: inside;
+  list-style-type: none;
+  line-height: 1.33em;
+  font-size: 0.9em;
+  column-count: 1;
+}
+footer li {
+  color: antiquewhite;
+  line-height: 1.33em;
+}
+ul li {
+  width: 93%;
+  list-style-position: inside;
+  list-style-type: circle;
+  padding: 0.1em;
+  font-size: 1em;
+  color: #201201; 
+  padding-left: 1.3em;
+  padding-bottom: 0.5em;
+}
+#experience {
+  grid-column: 1;
+  grid-row: 4;
+  display: grid;
+  background-color: #587e76;
+  max-width: 29.563em;
+  padding: 0.625em;
+  border: solid;
+  border-color: #c1502e;
+}
+#experience h2 {
+  grid-column: 1;
+  grid-row: 1/2;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
+#esperanza-logo {
+  max-width: 40%;
+  grid-column: 1;
+  margin-left: auto;
+  margin-right: auto;
+  grid-row: 2/3;
+  padding: 0.5em;
+}
+#skills {
+  grid-column: 1;
+  grid-row: 5;
+  display: grid;
+  background-color: #587e76;
+  max-width: 29.563em;
+  padding: 0.625em;
+  border: solid;
+  border-color: #c1502e;
+}
+#skills h2 {
+  grid-column: 1;
+  grid-row: 1/2;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
+#linux-logo {
+  max-width: 40%;
+  grid-column: 1;
+  margin-left: auto;
+  margin-right: auto;
+  grid-row: 2/3;
+  padding: 0.5em;
+}
+.collapsible {
+  cursor: pointer;
+  border: solid;
+  border-color: #587e76d3;
+  background-color: #587e76;
+  color: #201201;
+  width: 100%;
+  text-align: left;
+}
+.active, .collapsible:hover {
+  background-color:#c1502e;
+}
+.content {
+  display: none;
+  overflow: hidden;
+}
+.button {
+  border: #c1502e;
+  background-color: #587e76;
+}
+@media only screen and (min-width: 31.25em) {
+  #resume {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(6.25em, auto);
+  }
+  section{
+    border-color: #c1502e;
+  }
+  #biopic {
+    grid-column: 1/4;
+    grid-row: 1;
+    display: grid;
+    max-width: 100%;
+    padding: 1.25em;
+  }
+  #biopicture {
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/2;
+    max-width: 100%;
+  }
+  #bio {
+    grid-column: 1/4;
+    grid-row: 2;
+    max-width: unset;
+    padding: 0.625em;
+    align-self: center;
+  }
+  #studies {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.625em;
+    grid-auto-rows: min-content;
+    max-width: 29.563em;
+    padding: 0.625em;
+  }
+  #studies h2 {
+    grid-column: 1;
+    grid-row: 1/2;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #school-logo {
+    max-width: 45%;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2/3;
+  }
+  #study-list {
+    grid-column: 1;
+    grid-row: 3/4;
+    max-width: unset;
+  }
+  ol li {
+    list-style-position: inside;
+    list-style-type: none;
+    line-height: 1.33em;
+    column-count: 1;
+  }
+  footer li {
+    color: antiquewhite;
+    line-height: 1.33em;
+  }
+  ul li {
+    width: 93%;
+    list-style-position: inside;
+    list-style-type: circle;
+    padding: 0.1em;
+    font-size: 1em;
+    padding-left: 1.3em;
+    padding-bottom: 0.5em;
+  }
+  #experience {
+    grid-column: 2/4;
+    grid-row: 3;
+    display: grid;
+    max-width: unset;
+    padding: 0.625em;
+  }
+  #experience h2 {
+    grid-column: 1;
+    grid-row: 1/2;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #esperanza-logo {
+    max-width: 22%;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2/3;
+    padding: 0.5em;
+  }
+  #skills {
+    grid-column: 1/4;
+    grid-row: 4;
+    display: grid;
+    max-width: unset;
+    padding: 0.625em;
+  }
+  #skills h2 {
+    grid-column: 1;
+    grid-row: 1/2;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #linux-logo {
+    max-width: 40%;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2/3;
+    padding: 0.5em;
+  }
+}
+@media only screen and (min-width: 58.375em) {
+  #biopicture {
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/2;
+    max-width: 56.25em;
+  }
+}
+@media only screen and (min-width: 89.375em) {
+  h1 {
+    font-size: 2.5em;
+  }
+  #resume {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+  }
+  #biopic {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: grid;
+    max-width: 100%;
+    padding: 1.25em;
+  }
+  #bio {
+    height: 43.375em;
+    grid-column: 3/4;
+    grid-row: 1 / 2;
+    max-width: unset;
+    padding: 1em;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    align-self: center;
+  }
+  #biopicture {
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1;
+    max-width: 56.25em;
+    align-self: center;
+  }
+  #studies {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.625em;
+    grid-auto-rows: min-content;
+    max-width: unset;
+    padding: 0.625em;
+  }
+  #studies h2 {
+    grid-column: 1;
+    grid-row: 1/2;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #school-logo {
+    max-width: 45%;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2/3;
+  }
+  #study-list {
+    grid-column: 1;
+    grid-row: 3/4;
+    max-width: unset;
+  }
+  #experience {
+    grid-column: 2/4;
+    grid-row: 2;
+    display: grid;
+    background-color: #587e76;
+    max-width: unset;
+    padding: 0.625em;
+  }
+  #experience h2 {
+    grid-column: 1;
+    grid-row: 1/2;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #esperanza-logo {
+    max-width: 22%;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2/3;
+    padding: 0.5em;
+  }
+  #skills {
+    grid-column: 1/4;
+    grid-row: 3;
+    display: grid;
+    max-width: unset;
+    padding: 0.625em;
+
+  }
+  #skills h2 {
+    grid-column: 1;
+    grid-row: 1/2;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #linux-logo {
+    max-width: 40%;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2/3;
+    padding: 0.5em;
+  }
+}
